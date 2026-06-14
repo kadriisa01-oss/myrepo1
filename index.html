@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Hello World</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            font-size: 60px;
+            animation: move 2s infinite alternate;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(-30px);
+                opacity: 0.5;
+            }
+
+            to {
+                transform: translateY(30px);
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Hello World 🌎</h1>
+
+</body>
+</html>
